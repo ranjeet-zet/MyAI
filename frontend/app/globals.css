@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  background-color: #252525;
+  color: aliceblue;
+  background-color: hsl(240, 100%, 50%);
+}
+::selection{
+  background-color: rgba(246, 94, 0, 0.858);
+}
+.nav-div{
+  width: 100%;
+  background-color: hsl(240, 100%, 50%);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  position:sticky;
+}
+.nav-div div:last-child{
+  /* border: 1px solid black; */
+  margin-right: 12px;
+  width: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-div div a {
+  text-transform: capitalize;
+  font-size: large;
+}
